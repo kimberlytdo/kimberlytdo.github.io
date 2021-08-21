@@ -1,0 +1,153 @@
+.skip-link {
+  background: #000000;
+  color: #fff;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-150px);
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.skip-link:focus {
+  transform: translateY(150px);
+}
+
+.navigation {
+  background-color: #F6F6F6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: 0.4s;
+  z-index: 90;
+  width: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  vertical-align: top;
+  top: 0px;
+}
+
+#propic {
+  width: 5rem;
+  height: 5rem;
+  clear: both;
+}
+
+.block {
+  height: 15rem;
+  width: 100%;
+}
+
+#hm {
+  visibility: hidden;
+}
+
+.page_block {
+  height: 2rem;
+  width: 100%;
+}
+
+.content {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* align-items: flex-start; */
+}
+
+.test {
+  width: 500px;
+}
+
+.title {
+  width: 150px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+#name, #links {
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 0px;
+  margin: 0px;
+}
+
+p, a, span, b, i, div {
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+a {
+  color: rgb(39, 39, 185);
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+h1 {
+  color: #000000;
+  font-size: 1rem;
+  /* padding: 0px; */
+  /* margin: 0px; */
+}
+
+h2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  /* list-style-position: outside; */
+  list-style-position: inside;
+  text-indent: -2.5em;
+}
+
+ul li:before
+{
+  content: '\2192';
+  margin: 0 1em;    /* any design */
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    text-align: center;
+  }
+  .content {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+  #name {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    clear:both;
+  }
+  #email {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .navigation {
+    padding-left: 50px;
+  }
+  .content {
+    padding-left: 50px;
+  }
+  #name {
+    width: 150px;
+    margin-right: 100px;
+    text-align: left;
+  }
+  #propic {
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
